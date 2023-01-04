@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Charis+SIL:wght@700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/*Header and navigation bar*/
+* {
+    font-family: 'Charis SIL', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+h2 {
+    color: gainsboro;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #b1a8a0;
+}
+
+body {
+    background-color: #1E1C1C;
+}
+
+.nav-name {
+    padding: 0.3rem ;
+    font-size: 1.3rem;
+    color: #b1a8a0;
+    transition: transform .2s;
+}
+
+.nav-name:hover {
+    transform: scale(1.1);
+}
+
+.nav-links {
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #b1a8a0;
+    transition: transform 0.3s ease;
+}
+
+/* To make the links on the nav bar jump when hovered*/
+.nav-links:hover {
+    transform: scale(1.1);
+}
+
+/* This applies so that the whole section doesn't jump, just the texts*/
+.nav-links:hover::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+} 
+
+.header {
+    background: #111;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    box-shadow: 0 0.2rem rgb(0, 0, 0, 0.1);
+    height: 50px;
+}
+
+/*Body*/
+.background {
+    color: rgb(255, 255, 255);
+    margin-top: 250px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/*To avoid blurring the text, just the image*/
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("images/umb.JPG");
+    filter: blur(3px);
+    z-index: -1;
+    width: 100%;
+    height: 450px;
+    margin-top: 50px;
+    padding: 50px 0px;
+    background-position: 100%;
+    background-size: cover;
+}
+
+.text-container:hover {
+    animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(15px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(15px);
+    }
+}
+
+/* About section*/
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #b1a8a0;
+    margin-top: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.about-container {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about-text {
+    width: 50%;
+    margin-right: 10%;
+}
+
+.about-img {
+    width: 45%;
+    margin-top: 50px;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* Projects section*/
+.projects {
+    color: #b1a8a0;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.projects-item {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+.projects-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.projects-title {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #b1a8a0;
+}
+
+/* Resume section*/
+.resume {
+    color: #b1a8a0;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+/* Gallery section*/
+.gallery {
+    color: #b1a8a0;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+/* Contact Me section*/
+.contact {
+    color: #b1a8a0;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.footer-social {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #111;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+}
