@@ -23,7 +23,7 @@ let projects = [
     {
         image: "images/github.jpg",
         title: "More details on GitHub...",
-        url: "https://wilhenalbertohm.github.io"
+        url: "https://github.com/WilhenAlbertoHM"
     }
 ];
 
