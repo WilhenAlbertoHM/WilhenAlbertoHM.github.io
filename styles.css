@@ -250,3 +250,7 @@ body {
     justify-content: space-between;
     margin: 0 5rem;
 }
+
+#icon-social:hover {
+    transform: scale(1.2);
+}
