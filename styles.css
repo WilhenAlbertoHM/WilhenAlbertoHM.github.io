@@ -14,10 +14,30 @@
     scroll-behavior: smooth;
 }
 
+/* Target the entire webpage */
+body::-webkit-scrollbar {
+    width: 0.7em; /* Set the width of the scrollbar */
+}
+  
+/* Track (the background of the scrollbar) */
+body::-webkit-scrollbar-track {
+background: #f1f1f1; /* Set the color of the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+body::-webkit-scrollbar-thumb {
+background: #888; /* Set the color of the handle */
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+background: #555; /* Set the color of the handle on hover */
+}
+
 h1 {
     text-align: center;
     font-weight: bolder;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     text-decoration: underline;
 }
 
@@ -25,12 +45,12 @@ h2 {
     color: gainsboro;
     text-align: center;
     font-weight: bolder;
-    font-size: 4rem;
+    font-size: 3em;
 }
 
 p {
-    font-size: 1.1rem;
-    color: #b1a8a0;
+    font-size: 1.5em;
+    color: #bebebe; 
 }
 
 body {
@@ -112,7 +132,7 @@ body {
     background-size: cover;
 }
 
-.text-container:hover {
+.text-container {
     animation: bounce 3s ease-in-out infinite;
 }
 
@@ -160,6 +180,7 @@ body {
 .about-img img {
     width: 100%;
     height: auto;
+    border-radius: 2em;
 }
 
 /* Projects section*/
@@ -196,17 +217,18 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 31rem;
+    width: 30rem;
     margin: 0 auto;
     margin-bottom: 2em;
 }
 
 .projects-img {
-    width: 30rem;
-    height: 25rem;
+    width: 19em;
+    height: 11em;
     object-position: center;
     border-radius: 1em;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
+    transform: scaleY(1.2);
 }
 
 .projects-desc {
@@ -221,7 +243,7 @@ body {
 .resume {
     padding: 2rem;
     color: #b1a8a0;
-    margin-top: 50px;
+    margin-top: 2em;
     text-align: center;
     font-size: 1.6rem;
     font-weight: bolder;
