@@ -1,12 +1,8 @@
 // Projects section.
 let projects = [
     {
-        image: "images/biblequiz.JPG",
-        title: "Bible Quiz Website (in-progress)"
-    },
-    {
-        image: "images/market.JPG",
-        title: "Market Website (in-progress)"
+        image: "images/biblequiz.png",
+        title: "Bible Quiz Website"
     },
     {
         image: "images/numofislands.jpg",
