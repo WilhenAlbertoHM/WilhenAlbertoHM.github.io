@@ -9,13 +9,8 @@ let projects = [
         frameworks/libraries to enhance user experience, like React, Tailwind, etc.",
         url: "https://wilhenalbertohm.github.io/BibleQuiz/"
     },
-    // {
-    //     image: "images/numofislands.jpg",
-    //     title: "Number of Islands",
-    //     description: ""
-    // }, 
     {
-        image: "images/tictactoe.JPG",
+        image: "images/keras.JPG",
         title: "Neural Network Training with Keras",
         description: "Trained a neural network on 4000 train samples and 1000 test samples using Keras to evaluate \
         collaborative performance on 20 chefs on projects. I also utilized a Sequential model to specify the neural network: input to output layers through hidden layers \
@@ -42,7 +37,6 @@ let projects = [
 function createProjectGrids(project) {
     const projectItem = document.createElement("div");
     projectItem.classList.add("projects-item");
-    
     const projectImage = document.createElement("img");
     projectImage.classList.add("projects-img");
     projectImage.src = project.image;
