@@ -135,6 +135,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     color: #b1a8a0;
+    padding: 2rem;
     margin-top: 300px;
     margin-left: 100px;
     margin-right: 100px;
@@ -163,6 +164,7 @@ body {
 
 /* Projects section*/
 .projects {
+    padding: 2rem;
     color: #b1a8a0;
     margin-top: 50px;
     text-align: center;
@@ -217,6 +219,7 @@ body {
 
 /* Resume section*/
 .resume {
+    padding: 2rem;
     color: #b1a8a0;
     margin-top: 50px;
     text-align: center;
@@ -226,6 +229,7 @@ body {
 
 /* Gallery section*/
 .gallery {
+    padding: 2rem;
     color: #b1a8a0;
     margin-top: 50px;
     text-align: center;
