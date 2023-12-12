@@ -262,13 +262,13 @@ body {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 1em;
 }
 
 .gallery-item {
     background-color: rgb(255, 195, 66);
     box-shadow: 0 2px 4px rgba(0, 0, 0);
-    padding: 1rem;
+    padding: 0.5em;
     border-radius: 2em;
 }
 
@@ -285,23 +285,31 @@ body {
     color: #b1a8a0;
     margin-top: 50px;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.6em;
     font-weight: bolder;
 }
 
 .footer-social {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     background-color: #111;
 }
 
 .social {
     display: flex;
     justify-content: space-between;
-    margin: 0 5rem;
-    font-size: 2rem;
+    margin: 0 5em;
+    font-size: 2em;
+}
+
+.email {
+    padding-bottom: 3em;
+}
+
+#icon-social {
+    transform: scale(1.5);
 }
 
 #icon-social:hover {
-    transform: scale(1.2);
+    transform: scale(1.7);
 }
