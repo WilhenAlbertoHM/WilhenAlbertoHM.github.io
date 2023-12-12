@@ -250,7 +250,7 @@ body {
 }
 
 /* Gallery section*/
-.gallery {
+.gallery-section {
     padding: 2rem;
     color: #b1a8a0;
     margin-top: 50px;
@@ -278,6 +278,22 @@ body {
     border-radius: 2em;
     object-fit: cover;
     object-position: center;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right:10px;
 }
 
 /* Contact Me section*/

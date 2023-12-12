@@ -74,9 +74,12 @@
     </section>
 
     <!--Gallery-->
-    <section id="gallery" class="gallery">
+    <section id="gallery" class="gallery-section">
         <h1>Gallery</h1>
-        <div id="gallery-grid" class="gallery-grid">
+        <div class="gallery">
+            <button class="arrow arrow-left-btn" onclick="prevSlide()"></button>
+            <div id="gallery-grid" class="gallery-grid"></div>
+            <button class="arrow arrow-right-btn" onclick="nextSlide()"></button>
         </div>
     </section>
 
@@ -110,5 +113,7 @@
         </div>
     </footer>
 </body>
-    <script src="app.js"></script>
+    <script src="project.js"></script>
+    <script src="gallery.js"></script>
+    <script src="scroll.js"></script>
 </html>
