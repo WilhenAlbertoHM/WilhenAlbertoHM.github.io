@@ -1,6 +1,6 @@
 // Get all pictures.
 let pictures = ["images/coolsunset.jpg", "images/jfklib.jpg", 
-    "images/montreal.jpg", "images/night.jpg", "images/nightumb2.jpg", 
+    "images/montreal.jpg", "images/nightumb2.jpg", 
     "images/quincycenter.jpg", "images/sunset.jpg", "images/sunset2.jpg", "images/sunsetumb.jpg",
     "images/sunsetwater.jpg", "images/toronto.jpg", "images/towertoronto.jpg", "images/trees.jpg", 
     "images/uhall.jpg", "images/umbday.jpg"];

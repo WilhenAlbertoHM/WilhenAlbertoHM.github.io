@@ -261,15 +261,18 @@ body {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 1em;
 }
 
 .gallery-item {
-    background-color: rgb(255, 195, 66);
-    box-shadow: 0 2px 4px rgba(0, 0, 0);
-    padding: 0.5em;
+    box-shadow: 0 4px 10px #b1a8a0;
+    padding: 1em;
     border-radius: 2em;
+}
+
+.gallery-item:hover {
+    transform: scale(0.8) rotate(2deg);
 }
 
 .gallery-img {
