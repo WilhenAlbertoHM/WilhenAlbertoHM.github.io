@@ -3,6 +3,7 @@ let projects = [
     {
         image: "/images/sloanresearch.png",
         title: "Generative Model for Attention Patterns Linked to Personality Traits",
+        techstack: "Python (scikit-learn, Keras), OpenFace",
         description: "This is my current research at UMass Boston's VR Lab, led by Professor Funda Durupinar Babur. \
         My role involves in automating the extraction of eye gaze and head/neck rotation data from 6,000 videos, and \
         from the data, I use it to train a generative model using OpenFace, Python, scikit-learn, and Keras to predict personality information, \
@@ -13,6 +14,7 @@ let projects = [
     {
         image: "/images/biblequiz.png",
         title: "Bible Quiz Website",
+        techstack: "HTML, CSS, JavaScript",
         description: "This is a website that I made when I found an interest in learning more about front-end development. \
         Since I enjoy reading the Bible, I knew I could make it into a website quiz using HTML, CSS, and JavaScript. In general, \
         it's a Bible quiz testing your knowledge of the Word of God, with the intention to learn and have fun!",
@@ -21,6 +23,7 @@ let projects = [
     {
         image: "/images/keras.JPG",
         title: "Chefs' Performance Prediction",
+        techstack: "Python (Keras, scikit-learn)",
         description: "Trained a neural network on 4000 train samples and 1000 test samples using Keras to evaluate \
         collaborative performance on 20 chefs. I utilized a Sequential model to specify the neural network, training the model \
         with 200 epochs and a batch size of 32. I achieved a 72% prediction accuracy on test data and 68% on training data. \
@@ -30,6 +33,7 @@ let projects = [
     {
         image: "/images/graphbox.png",
         title: "GraphBox",
+        techstack: "Roblox Studio, Lua scripting",
         description: 
         "A Roblox game created by my team and I for our computer graphics course, featuring two custom games: GObby! and BoxDash. Play as one of five characters, \
         including group members and our Professor Daniel Haehn. Overcome obstacles in GObby and navigate three difficult levels in BoxDash, avoiding falling into destruction. \
@@ -38,12 +42,16 @@ let projects = [
         url: "https://github.com/WilhenAlbertoHM/GraphBox"
     },
     {
-        image: "/images/physicsgrade.JPG",
-        title: "Grade Calculator",
-        description: "A command-line based program that calculates the final grade for a Physics 1 class that I was in. \
-        I made this Java program to share it with my classmates through Discord, as grades were unknown, and I thought it would be fun to hear \
-        feedback from others regarding my code and how I can improve. I used an ArrayList data structure instead of a regular array to learn more about data structures.",
-        url: "https://github.com/WilhenAlbertoHM/GradeCalculator"
+        image: "/images/tweets.png",
+        title: "K-Nearest Neighbors & Naïve Bayes Tweets Classification",
+        techstack: "Python (scikit-learn)",
+        description: "These two projects come from my Codecademy course: 'Build a Machine Learning Model with Python'. \
+        The first project uses K-Nearest Neighbors to predict whether a tweet will go viral or not based on the length of the tweet, \
+        and the number of followers and friends. \
+        The second project uses Naïve Bayes to classify any tweet and predict whether a given tweet came from New York, London, or Paris. \
+        This one involves a count vectorizer, which turns our list of words into count vectors that determine the frequency of each word. \
+        These two projects helped me understand more about supervised learning and data preprocessing.",
+        url: "https://github.com/WilhenAlbertoHM/Tweets-Classification"
     },
     {
         image: "/images/github.jpg",
@@ -71,6 +79,15 @@ function createProjectGrids(project) {
         window.location.assign(project.url);
     });
 
+    // Create a tech stack element for the project item.
+    const projectTechStack = document.createElement("h3");
+    projectTechStack.classList.add("projects-techstack");
+    
+    // If the project has a tech stack, then display it.
+    if (project.techstack !== undefined) {
+        projectTechStack.textContent = "Tools used: " +  project.techstack;
+    }
+
     // Create a description element for the project item.
     const projectDesc = document.createElement("h4");
     projectDesc.classList.add("projects-desc");
@@ -79,6 +96,7 @@ function createProjectGrids(project) {
     // Append the image, title, and description elements to the project item.
     projectItem.appendChild(projectImage); 
     projectItem.appendChild(projectTitle);
+    projectItem.appendChild(projectTechStack);
     projectItem.appendChild(projectDesc);
     return projectItem;
 }

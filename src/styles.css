@@ -234,6 +234,14 @@ img {
     transform: scaleY(1.2);
 }
 
+.projects-techstack {
+    font-family: monospace;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #171717;
+}
+
 .projects-desc {
     font-family: monospace;
     margin-top: 10px;
