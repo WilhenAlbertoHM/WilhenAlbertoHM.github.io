@@ -1,24 +1,24 @@
 // Projects section.
 let projects = [
     {
-        image: "/images/sloanresearch.png",
-        title: "Generative Model for Attention Patterns Linked to Personality Traits",
-        techstack: "Python (scikit-learn, Keras), OpenFace",
-        description: "This is my current research at UMass Boston's VR Lab, led by Professor Funda Durupinar Babur. \
-        My role involves in automating the extraction of eye gaze and head/neck rotation data from 6,000 videos, and \
-        from the data, I use it to train a generative model using OpenFace, Python, scikit-learn, and Keras to predict personality information, \
-        which follows the Big Five personality traits (OCEAN - Openness, Conscientiousness, Extroversion, Agreeableness, and Neuroticism). \
-        The image is from OpenFace's GitHub, illustrating facial landmark extraction from videos/images.",
-        url: ""
+        image: "/images/faithful.png",
+        title: "Faithful AI",
+        techstack: "Python (LangChain, Streamlit), Ollama (Llama 3)",
+        description: "Here's a project I'm excited to work on, especially by using Ollama (Llama 3) and LangChain. \
+        Faithful AI is a Christian-based chatbot designed to engage in conversations about faith, the Bible, and more. \
+        The chatbot has a passionate and energetic tone, and it can respond in English, Spanish, French, and German!",
+        url: "https://github.com/WilhenAlbertoHM/FaithfulAI"
     },
     {
-        image: "/images/biblequiz.png",
-        title: "Bible Quiz Website",
-        techstack: "HTML, CSS, JavaScript",
-        description: "This is a website that I made when I found an interest in learning more about front-end development. \
-        Since I enjoy reading the Bible, I knew I could make it into a website quiz using HTML, CSS, and JavaScript. In general, \
-        it's a Bible quiz testing your knowledge of the Word of God, with the intention to learn and have fun!",
-        url: "https://github.com/WilhenAlbertoHM/BibleQuiz"
+        image: "/images/sloanresearch.png",
+        title: "Generative Model for Attention Patterns Linked to Personality Traits",
+        techstack: "Python (scikit-learn, Keras, OpenFace)",
+        description: "This is my research at UMass Boston's VR Lab, led by Professor Funda Durupinar Babur. \
+        My role involves in automating the extraction of eye gaze and head/neck rotation data from 6,000 videos, and \
+        from the data, I use it to train a generative model using Python, scikit-learn, Keras, and OpenFace to predict personality information, \
+        which follows the Big Five personality traits (OCEAN - Openness, Conscientiousness, Extroversion, Agreeableness, and Neuroticism). \
+        The image is from OpenFace's GitHub, illustrating facial landmark extraction from videos/images.",
+        url: "https://github.com/WilhenAlbertoHM/Sentiment-Analysis-With-Gaze"
     },
     {
         image: "/images/deep-learning-projects.png",

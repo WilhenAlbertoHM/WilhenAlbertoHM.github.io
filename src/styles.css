@@ -157,9 +157,7 @@ body {
     flex-wrap: wrap;
     color: #b1a8a0;
     padding: 2rem;
-    margin-top: 300px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 300px 100px 300px 100px;
 }
 
 .about-container {
@@ -178,10 +176,47 @@ body {
     margin-top: 50px;
 }
 
+.tech-stack-img {
+    width: 5%;
+    margin: 30px 0px 100px 0px;
+}
+
 img {
     width: 100%;
     height: auto;
     border-radius: 2em;
+}
+
+/* Tech Stack section */
+.tech-stack {
+    padding: 2rem;
+    color: #b1a8a0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.tech-stack-container {
+    margin-top: 20px;
+}
+
+/* Work Experience section */
+.work-experience {
+    padding: 5rem;
+    color: #b1a8a0;
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+}
+
+.work-experience-container {
+    list-style-position: inside;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.6em;
+    color: #bebebe;
 }
 
 /* Projects section*/
@@ -272,7 +307,7 @@ img {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1em;
 }
 
